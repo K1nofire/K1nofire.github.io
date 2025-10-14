@@ -1,136 +1,58 @@
-# ProhorChief1.github.io
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Правила</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background: #151518;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      color: #fff;
-      position: relative;
-    }
-    .author {
-      position: absolute;
-      top: -38px;
-      left: 36px;
-      font-weight: bold;
-      font-size: 2.3em;
-      color: #ff2222;
-      letter-spacing: 2px;
-      opacity: 1;
-      z-index: 10;
-      text-shadow: 
-        0 0 18px #ff2222, 
-        0 0 36px #ff2222,
-        0 0 60px #ff2222,
-        0 0 8px #ff2222;
-      user-select: none;
-      pointer-events: none;
-    }
-    .container {
-      max-width: 700px;
-      margin: 100px auto 60px auto;
-      padding: 32px 16px;
-      background: rgba(20,20,24,0.95);
-      border-radius: 24px;
-      box-shadow: 0 0 30px #0007;
-    }
-    .site-title {
-      margin-top: 0;
-      margin-bottom: 32px;
-      text-align: center;
-      font-size: 2.4em;
-      font-weight: 700;
-      letter-spacing: 2px;
-      color: #fff;
-      text-shadow: 0 0 12px #fff, 0 0 36px #fff;
-    }
-    .rules-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-    }
-    .rule-item {
-      padding: 24px 24px;
-      font-size: 1.15em;
-      border-radius: 14px;
-      background: rgba(22,22,26,0.93);
-      box-shadow:
-        0 0 7px 1.5px #fff,
-        0 0 14px 3px #fff7,
-        0 0 1px #fff,
-        0 0 1px #fff;
-      border: 2px solid #fff;
-      outline: none;
-      color: #fff;
-      transition: box-shadow 0.22s;
-      text-shadow: 0 0 5px #fff, 0 0 8px #fff;
-    }
-    .rules-copy-block {
-      margin-top: 60px;
-      margin-bottom: 40px;
-      padding-bottom: 30px;
-      border-top: 2px solid #fff2;
-    }
-    @media (max-width: 600px) {
-      .container { margin-top: 80px; padding: 10px 2vw; }
-      .site-title { font-size: 1.4em; }
-      .rule-item { font-size: 1em; padding: 14px 8px; }
-      .author { font-size: 1.25em; left: 10px; top: -28px; }
-      .rules-copy-block { margin-top: 34px; }
-    }
-  </style>
-</head>
-<body>
-  <div class="author">ProhorChief</div>
-  <div class="container">
-    <h1 class="site-title">Ознакомьтесь с правилами 2.0
-    Запрещено:</h1>
-    <ul class="rules-list">
-      <li class="rule-item">1. прямые или косвенные оскорбления участников.</li>
-      <li class="rule-item">2. Слишком много ненормальной лексики.</li>
-      <li class="rule-item">3. Реклама чего-то, даже просто пересылки.</li>
-      <li class="rule-item">4. Не публикуйте личную информацию других лиц.</li>
-      <li class="rule-item">5. Следуйте указаниям администрации.</li>
-      <li class="rule-item">6. разжигайте конфликты и вражду.</li>
-      <li class="rule-item">7. Не злоупотребляйте капсом.</li>
-      <li class="rule-item">8. Неадекватная критика.</li>
-      <li class="rule-item">9. Не распространение вредоносного ПО.</li>
-      <li class="rule-item">10. Оскорбление чужого труда.</li>
-      <li class="rule-item">11. Спам и флуд.</li>
-      <li class="rule-item">12. 18+ контент.</li>
-      <li class="rule-item">13. Угроза сноса/рейда и т.д.</li>
-      <li class="rule-item">14. Писать от имени канала.</li>
-      <li class="rule-item">15. Неадекватное поведение.</li>
-    </ul>
-    <div class="rules-copy-block">
-      <h1 class="site-title">Раздел для стажёров и модеров</h1>
-      <ul class="rules-list">
-        <li class="rule-item">1. Warn 30d.</li>
-        <li class="rule-item">2. Ban.</li>
-        <li class="rule-item">3. Ban, можно только с разрешением.</li>
-        <li class="rule-item">4. Ban.</li>
-        <li class="rule-item">5. Либо мут, либо варн, либо бан.</li>
-        <li class="rule-item">6. Warn/ban.</li>
-        <li class="rule-item">7. Mute 30m.</li>
-        <li class="rule-item">8. Ban.</li>
-        <li class="rule-item">9. Ban.</li>
-        <li class="rule-item">10. Warn.</li>
-        <li class="rule-item">11. Mute 30d.</li>
-        <li class="rule-item">12. Ban.</li>
-        <li class="rule-item">13. Ban.</li>
-        <li class="rule-item">14. Warn 30d.</li>
-        <li class="rule-item">15. Ban.</li>
-      </ul>
-    </div>
-  </div>
-</body>
-</html>
+# 📃 Правила для чатов Telegram
+
+[🌐 Главная страница](./index.html) | [🔗 Раздел ссылок](./links.html)
+
+---
+
+### ⏳ • Временные правила:
+
+- Запрещены **политические дискуссии, агитация и провокационные темы**, не относящиеся к проекту;
+- (Правило неактивно) За использование **нецензурной лексики** в чатах, а также **попытку обхода фильтра запрещённых слов** будет выдаваться **предупреждение**.
+- За **чрезмерное использование нецензурной лексики** будет выдаваться **предупреждение**.
+
+### 🚫 • Запрещено:
+
+1. Спам;
+2. [ASCII графика](https://ru.m.wikipedia.org/wiki/ASCII-%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0);
+3. [Флуд](https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D1%83%D0%B4#:~:text=%D0%92%20%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC%20%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B5,%D0%B8%20%D0%B1%D0%BB%D0%BE%D0%B3%D0%B0%D1%85);
+4. Отправка **материалов** с тегом 18+ (Шок-контент);
+5. Отправка **стикеров** с тегом 18+;
+6. Отправка сообщений/материалов **от имени канала** (Разрешено только от личного аккаунта);
+7. Прямые или косвенные **оскорбления** других участников;
+8. **Дискриминация** по национальному, религиозному или иному признаку;
+9. Угрозы;
+10. Действия, направленные на **провокацию конфликтов, травлю или преследование участников**;
+11. **Пропаганда** насилия, оружия, наркотических средств, алкоголя, табачных изделий;
+12. Распространение сообщений/материалов, разглашающие **любую информацию** участника/модератора/администратора **без его согласия**;
+13. **Размещение рекламы** сторонних проектов/ресурсов/файлов **без разрешения администрации**;
+14. **Распространение программ** с уязвимостями/вирусами;
+15. **Продажа** игровых аккаунтов/карт;
+16. Распространение **ложной информации**; _[/warn 1d Дизинформация]_;
+17. Попрошайничество;
+18. Выдавать себя за **модерацию/администрацию** проектов;
+19. **Критика** действий модерации/администрации;
+20. **Неадекватная критика**. Даже если вам не нравится какой-то контент в игре, **не стоит оскорблять чужой труд**;
+21. **Использование дополнительных аккаунтов** для обхода ограничений/блокировки;
+22. 🆕 Использование команд /report и @admin **без весомой причины**.
+
+### ⚠️ • Не рекомендуется:
+
+1. Злоупотребление [Caps Lock](https://ru.wikipedia.org/wiki/Caps_Lock#:~:text=%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%2C%20%D0%9D%D0%90%D0%91%D0%A0%D0%90%D0%9D%D0%9D%D0%AB%D0%99%20%D0%A1%D0%9E%20%D0%92%D0%9A%D0%9B%D0%AE%D0%A7%D0%81%D0%9D%D0%AB%D0%9C%20%D0%A0%D0%95%D0%96%D0%98%D0%9C%D0%9E%D0%9C%20CAPS%20LOCK);
+2. Злоупотребление смайлами;
+3. Злоупотребление реакциями под сообщениями;
+4. **Игнорирование предупреждений** от модерации/администрации.
+
+### ℹ️ • Прочая информация:
+
+- Незнание правил **не освобождает** от ответственности.
+- **С 00:00 до 09:00** (МСК) действует ограничение на отправку медиа во всех чатах.
+- Если Вас не устраивает поведение какого-либо участника, Вы можете написать **жалобу** о нём, использовав команду /report или @admin.
+  > Чтобы отправить жалобу, необходимы эти условия:
+  > - Команда доступна только в ответ на сообщение с нарушением;
+  > - Сообщение должно содержать указание причины нарушения.
+
+---
+
+[📝 Раздел для модераторов и стажёров](./TGmodRules.html)
+
+`Правила обновлены 29.08.2025`
