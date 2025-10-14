@@ -1,40 +1,206 @@
+/* ====== ОСНОВНОЙ ФОН И ШРИФТЫ ====== */
 body {
+  background: #1a0933; /* тёмно-фиолетовый */
+  color: #eee;
+  font-family: 'Segoe UI', 'Arial', 'Liberation Sans', 'sans-serif';
   margin: 0;
-  min-height: 100vh;
-  background: #151518;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  color: #fff;
-  position: relative;
+  padding: 0;
 }
-.author {
-  position: absolute;
-  top: -38px;
-  left: 36px;
-  font-weight: bold;
-  font-size: 2.3em;
-  color: #ff2222;
-  letter-spacing: 2px;
-  opacity: 1;
-  z-index: 10;
-  text-shadow: 
-    0 0 18px #ff2222, 
-    0 0 36px #ff2222,
-    0 0 60px #ff2222,
-    0 0 8px #ff2222;
-  user-select: none;
-  pointer-events: none;
-}
+
+/* ====== КОНТЕЙНЕР ====== */
 .container {
-  max-width: 700px;
-  margin: 100px auto 60px auto;
-  padding: 32px 16px;
-  background: rgba(20,20,24,0.95);
-  border-radius: 24px;
-  box-shadow: 0 0 30px #0007;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-.site-title {
-  margin-top: 0;
-  margin-bottom: 32px;
+
+/* ====== ХЕДЕР ====== */
+header {
+  background: #270d4d; /* чуть светлее темно-фиолетовый */
+  border-bottom: 2px solid #333;
+  padding: 24px 0 12px 0;
+  box-shadow: 0 0 24px 0 #000a;
+}
+
+header h1 {
+  color: #ffe646;
+  font-size: 2.5em;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  margin: 0;
+  text-shadow: 0 0 12px #ffe646, 0 0 32px #fff3;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: left;
+}
+
+header h2 {
+  color: #fff;
+  font-size: 1.1em;
+  margin: 8px 0 0 0;
+  font-weight: normal;
+  text-shadow: 0 0 6px #ffe64655, 0 0 10px #fff2;
+}
+
+#a-title {
+  text-decoration: none;
+}
+
+/* ====== КНОПКИ ====== */
+.button-link,
+.button2-link {
+  display: inline-block;
+  margin: 0 2px 6px 0;
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: inherit;
+  background: linear-gradient(90deg, #444 0%, #222 100%);
+  color: #ffe646;
+  text-decoration: none;
+  box-shadow: 0 0 8px #ffe64633, 0 0 0 #000;
+  border: 1px solid #ffe64677;
+  transition: background 0.2s, box-shadow 0.2s;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 0 4px #ffe646cc, 0 0 12px #0005;
+}
+
+.button-link:hover,
+.button2-link:hover {
+  background: linear-gradient(90deg, #ffe646 0%, #ff9900 100%);
+  color: #333;
+  box-shadow: 0 0 16px #ffe646bb, 0 0 32px #fff2;
+  border-color: #ffe646;
+  text-shadow: 0 0 10px #ffe646cc, 0 0 24px #fff6;
+}
+
+.button2-link {
+  background: linear-gradient(90deg, #444 0%, #222 100%);
+  color: #fff;
+  border: 1px solid #ff9900aa;
+  text-shadow: 0 0 4px #ff9900cc, 0 0 10px #fff2;
+}
+
+.button2-link:hover {
+  background: linear-gradient(90deg, #ff9900 0%, #ffe646 100%);
+  color: #222;
+  box-shadow: 0 0 16px #ff9900cc, 0 0 32px #fff3;
+  border-color: #ff9900;
+  text-shadow: 0 0 10px #ff9900cc, 0 0 16px #fff6;
+}
+
+/* ====== ОСНОВНОЙ КОНТЕНТ ====== */
+#main_content {
+  background: #210e40; /* тёмно-фиолетовый контейнер */
+  border-radius: 12px;
+  box-shadow: 0 0 32px #000c;
+  padding: 30px 24px;
+  margin: 24px 0 32px 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  font-weight: bold;
+  color: #ffe646;
+  text-shadow: 0 0 10px #ffe64699, 0 0 32px #fff1;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.2em; color: #ff9900; }
+
+ol, ul {
+  margin-left: 24px;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 1.04em;
+}
+
+/* ====== ССЫЛКИ В ТЕКСТЕ ====== */
+a {
+  color: #ffe646;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #ff9900;
+  text-shadow: 0 0 8px #ffe64688, 0 0 12px #fff4;
+}
+
+/* ====== КОД ====== */
+code.language-plaintext.highlighter-rouge {
+  background: #222;
+  color: #ffe646;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-family: 'Fira Mono', 'Consolas', 'monospace';
+  font-size: 1em;
+  box-shadow: 0 0 10px #ffe64655, 0 0 24px #fff2;
+  text-shadow: 0 0 8px #ffe646aa, 0 0 16px #fff8;
+}
+
+/* ====== БЛОК-КВОТЫ ====== */
+blockquote {
+  background: #22133f;
+  border-left: 4px solid #ffe646;
+  margin: 14px 0;
+  padding: 10px 18px;
+  color: #ffe646;
+  font-style: italic;
+  box-shadow: 0 0 12px #ffe64622;
+}
+
+/* ====== HR ====== */
+hr {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ffe646 0%, #333 100%);
+  margin: 28px 0;
+  box-shadow: 0 0 12px #ffe64633, 0 0 24px #fff3;
+}
+
+/* ====== СВЕТЯЩИЙСЯ ТЕКСТ ====== */
+.glow {
+  color: #ffe646;
+  text-shadow: 0 0 24px #ffe646, 0 0 48px #ffe646aa, 0 0 96px #fffc;
+  font-weight: bold;
+}
+
+/* ====== МЕЛКИЕ ДЕТАЛИ ====== */
+em {
+  color: #ff9900;
+  font-style: normal;
+  font-weight: bold;
+  text-shadow: 0 0 8px #ff9900cc, 0 0 18px #fff6;
+}
+
+strong {
+  color: #ffe646;
+  font-weight: bold;
+  text-shadow: 0 0 6px #ffe64677, 0 0 12px #fff3;
+}
+
+/* ====== ЗЕЛЁНЫЙ ТЕКСТ (Палитра под фон) ====== */
+.green,
+.green-text,
+.green-glow {
+  color: #49ff49; /* Ярко-зелёный, хорошо сочетается с темно-фиолетовым */
+  text-shadow: 0 0 12px #49ff4999, 0 0 32px #49ff4922;
+  font-weight: bold;
+}
+.green-glow {
+  text-shadow: 0 0 24px #49ff49, 0 0 48px #49ff49aa, 0 0 96px #49ff49cc;
+}
+
+/* Пример применения:
+<span class="green">Зелёный текст</span>
+<span class="green-glow">Светящийся зелёный текст</span>
+*/  margin-bottom: 32px;
   text-align: center;
   font-size: 2.4em;
   font-weight: 700;
