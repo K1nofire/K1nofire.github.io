@@ -1,6 +1,3 @@
-body, .card-title, .card-desc, .card a, .footer-links a, .footer-copy {
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif;
-}
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html, body {
@@ -13,7 +10,7 @@ html, body {
 
 body {
   color: #fff;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif;
   min-height: 100vh;
 }
 
@@ -67,6 +64,7 @@ header {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .title-box img {
@@ -81,6 +79,7 @@ header {
   font-weight: 700;
   color: #ff9000;
   text-transform: uppercase;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .grid {
@@ -111,7 +110,7 @@ header {
 }
 
 .card-body {
-  padding: 14px;
+  padding: 0;
   background: #000000;
 }
 
@@ -119,62 +118,5 @@ header {
   font-size: 16px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 6px;
-}
-
-.card-desc {
-  font-size: 13px;
-  color: #ccc;
-  height: 36px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.card a {
-  display: inline-block;
-  padding: 7px 16px;
-  background: #ff9000;
-  color: #000;
-  text-decoration: none;
-  font-weight: 700;
-  border-radius: 18px;
-  transition: background 0.2s, transform 0.2s;
-}
-
-.card a:hover {
-  background: #ffb347;
-  transform: scale(1.05);
-}
-
-footer {
-  margin-top: 30px;
-  padding: 24px;
-  background: #000000;
-  border-top: 1px solid #ff9000;
-  text-align: center;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 26px;
-  flex-wrap: wrap;
-  margin-bottom: 14px;
-}
-
-.footer-links a {
-  color: #ff9000;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-  transition: color 0.2s;
-}
-
-.footer-links a:hover {
-  color: #ffb347;
-}
-
-.footer-copy {
-  color: #666;
-  font-size: 12px;
+  padding: 12px 14px;
 }
