@@ -1,3 +1,6 @@
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('dragstart', e => e.preventDefault());
+
 const logo = document.getElementById('logoBox');
 const titleBox = document.getElementById('titleBox');
 const heroTitle = document.getElementById('heroTitle');
@@ -12,8 +15,6 @@ if (storedTitle) {
   titleBox.innerHTML = `<img src="${storedTitle}" alt="title">`;
   heroTitle.innerHTML = `<img src="${storedTitle}" alt="title">`;
 }
-
-const searchInput = document.getElementById('searchInput');
 
 function render(items) {
   const grid = document.getElementById('grid');
@@ -37,14 +38,6 @@ fetch('afisha.json')
   .then(r => r.json())
   .then(items => {
     render(items);
-    searchInput.addEventListener('input', () => {
-      const q = searchInput.value.toLowerCase();
-      const filtered = items.filter(item =>
-        item.name.toLowerCase().includes(q) ||
-        item.desc.toLowerCase().includes(q)
-      );
-      render(filtered);
-    });
   })
   .catch(() => {
     document.getElementById('grid').innerHTML = '<p style="padding:24px; color:#ccc;">afisha.json не найден, бля</p>';
