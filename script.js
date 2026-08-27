@@ -3,7 +3,6 @@ document.addEventListener('dragstart', e => e.preventDefault());
 
 const logo = document.getElementById('logoBox');
 const titleBox = document.getElementById('titleBox');
-const heroTitle = document.getElementById('heroTitle');
 
 const storedLogo = localStorage.getItem('logoUrl');
 if (storedLogo) {
@@ -13,7 +12,6 @@ if (storedLogo) {
 const storedTitle = localStorage.getItem('titleUrl');
 if (storedTitle) {
   titleBox.innerHTML = `<img src="${storedTitle}" alt="title">`;
-  heroTitle.innerHTML = `<img src="${storedTitle}" alt="title">`;
 }
 
 function render(items) {
