@@ -6,7 +6,7 @@ const titleBox = document.getElementById('titleBox');
 
 const storedLogo = localStorage.getItem('logoUrl');
 if (storedLogo) {
-  logo.innerHTML = `<img src="${storedLogo}" alt="logo">`;
+  logo.innerHTML = `<img src="https://i.postimg.cc/28msyBss/In-Shot-20260827-123502358.png" alt="logo">`;
 }
 
 const storedTitle = localStorage.getItem('titleUrl');
