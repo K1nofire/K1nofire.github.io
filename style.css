@@ -95,6 +95,7 @@ header {
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.25s, box-shadow 0.25s;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -110,7 +111,7 @@ header {
 }
 
 .card-body {
-  padding: 0;
+  padding: 12px 14px;
   background: #000000;
 }
 
@@ -118,5 +119,39 @@ header {
   font-size: 16px;
   font-weight: 700;
   color: #fff;
-  padding: 12px 14px;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 24px;
+  background: #000000;
+  border-top: 1px solid #ff9000;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.footer-links a {
+  color: #ff9000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.2s;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif;
+}
+
+.footer-links a:hover {
+  color: #ffb347;
+}
+
+.footer-copy {
+  color: #666;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif;
 }
