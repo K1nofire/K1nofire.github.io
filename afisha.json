@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Название фильма",
+    "photo": "https://example.com/poster.jpg",
+    "desc": "Короткое описание",
+    "link": "https://example.com/watch"
+  }
+]
