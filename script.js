@@ -20,14 +20,24 @@ function render(items) {
   items.forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
-    card.innerHTML = `
-      <img src="${item.photo}" alt="${item.name}">
-      <div class="card-body">
-        <div class="card-title">${item.name}</div>
-        <div class="card-desc">${item.desc}</div>
-        <a href="${item.link}" target="_blank">СМОТРЕТЬ</a>
-      </div>
-    `;
+
+    const img = document.createElement('img');
+    img.src = item.photo;
+    img.alt = item.name;
+    img.addEventListener('click', () => {
+      window.open(item.link, '_blank');
+    });
+
+    const body = document.createElement('div');
+    body.className = 'card-body';
+
+    const title = document.createElement('div');
+    title.className = 'card-title';
+    title.textContent = item.name;
+
+    body.appendChild(title);
+    card.appendChild(img);
+    card.appendChild(body);
     grid.appendChild(card);
   });
 }
