@@ -21,12 +21,13 @@ function render(items) {
     const card = document.createElement('div');
     card.className = 'card';
 
+    card.addEventListener('click', () => {
+      window.open(item.link, '_blank');
+    });
+
     const img = document.createElement('img');
     img.src = item.photo;
     img.alt = item.name;
-    img.addEventListener('click', () => {
-      window.open(item.link, '_blank');
-    });
 
     const body = document.createElement('div');
     body.className = 'card-body';
