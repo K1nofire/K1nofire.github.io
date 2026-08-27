@@ -91,7 +91,7 @@ header {
 
 .card {
   background: #000000;
-  border: 1px solid #ff9000;
+  border: none;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.25s, box-shadow 0.25s;
