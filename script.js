@@ -1,3 +1,20 @@
+const overlay = document.getElementById('modalOverlay');
+const acceptBtn = document.getElementById('acceptBtn');
+const declineBtn = document.getElementById('declineBtn');
+
+if (localStorage.getItem('agreementAccepted') === 'yes') {
+  overlay.style.display = 'none';
+}
+
+acceptBtn.addEventListener('click', () => {
+  localStorage.setItem('agreementAccepted', 'yes');
+  overlay.style.display = 'none';
+});
+
+declineBtn.addEventListener('click', () => {
+  window.location.href = 'about:blank';
+});
+
 document.addEventListener('contextmenu', e => e.preventDefault());
 document.addEventListener('dragstart', e => e.preventDefault());
 
