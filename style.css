@@ -1,203 +1,216 @@
-/* ====== ОСНОВНОЙ ФОН И ШРИФТЫ ====== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
-  background: #1a0933; /* тёмно-фиолетовый */
-  color: #eee;
-  font-family: 'Segoe UI', 'Arial', 'Liberation Sans', 'sans-serif';
-  margin: 0;
-  padding: 0;
+  background: linear-gradient(145deg, #0f0f0f 0%, #1a0f00 40%, #0d0d0d 100%);
+  color: #fff;
+  font-family: Roboto, Arial, sans-serif;
+  min-height: 100vh;
 }
 
-/* ====== КОНТЕЙНЕР ====== */
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* ====== ХЕДЕР ====== */
 header {
-  background: #270d4d; /* чуть светлее темно-фиолетовый */
-  border-bottom: 2px solid #333;
-  padding: 24px 0 12px 0;
-  box-shadow: 0 0 24px 0 #000a;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 14px 24px;
+  background: rgba(13, 13, 13, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 144, 0, 0.35);
 }
 
-header h1 {
-  color: #ffe646;
-  font-size: 2.5em;
-  font-family: 'Segoe UI', 'Arial', sans-serif;
-  margin: 0;
-  text-shadow: 0 0 12px #ffe646, 0 0 32px #fff3;
-  font-weight: bold;
-  letter-spacing: 3px;
-  text-align: left;
-}
-
-header h2 {
-  color: #fff;
-  font-size: 1.1em;
-  margin: 8px 0 0 0;
-  font-weight: normal;
-  text-shadow: 0 0 6px #ffe64655, 0 0 10px #fff2;
-}
-
-#a-title {
-  text-decoration: none;
-}
-
-/* ====== КНОПКИ ====== */
-.button-link,
-.button2-link {
-  display: inline-block;
-  margin: 0 2px 6px 0;
-  padding: 7px 16px;
-  border-radius: 8px;
-  font-size: 1em;
-  font-family: inherit;
-  background: linear-gradient(90deg, #444 0%, #222 100%);
-  color: #ffe646;
-  text-decoration: none;
-  box-shadow: 0 0 8px #ffe64633, 0 0 0 #000;
-  border: 1px solid #ffe64677;
-  transition: background 0.2s, box-shadow 0.2s;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-shadow: 0 0 4px #ffe646cc, 0 0 12px #0005;
-}
-
-.button-link:hover,
-.button2-link:hover {
-  background: linear-gradient(90deg, #ffe646 0%, #ff9900 100%);
-  color: #333;
-  box-shadow: 0 0 16px #ffe646bb, 0 0 32px #fff2;
-  border-color: #ffe646;
-  text-shadow: 0 0 10px #ffe646cc, 0 0 24px #fff6;
-}
-
-.button2-link {
-  background: linear-gradient(90deg, #444 0%, #222 100%);
-  color: #fff;
-  border: 1px solid #ff9900aa;
-  text-shadow: 0 0 4px #ff9900cc, 0 0 10px #fff2;
-}
-
-.button2-link:hover {
-  background: linear-gradient(90deg, #ff9900 0%, #ffe646 100%);
-  color: #222;
-  box-shadow: 0 0 16px #ff9900cc, 0 0 32px #fff3;
-  border-color: #ff9900;
-  text-shadow: 0 0 10px #ff9900cc, 0 0 16px #fff6;
-}
-
-/* ====== ОСНОВНОЙ КОНТЕНТ ====== */
-#main_content {
-  background: #210e40; /* тёмно-фиолетовый контейнер */
+.logo {
+  width: 56px;
+  height: 56px;
+  background: #ff9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 30px;
+  color: #000;
   border-radius: 12px;
-  box-shadow: 0 0 32px #000c;
-  padding: 30px 24px;
-  margin: 24px 0 32px 0;
+  overflow: hidden;
+  box-shadow: 0 0 18px rgba(255, 144, 0, 0.55);
 }
 
-h1, h2, h3 {
-  font-family: 'Segoe UI', 'Arial', sans-serif;
-  font-weight: bold;
-  color: #ffe646;
-  text-shadow: 0 0 10px #ffe64699, 0 0 32px #fff1;
-  margin-top: 24px;
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.title-box {
+  margin-left: 16px;
+  font-size: 28px;
+  font-weight: 900;
+  color: #ff9000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.title-box img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+.search {
+  margin-left: auto;
+  width: 320px;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 22px;
+  border: 1px solid #333;
+  background: rgba(20, 20, 20, 0.8);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search input:focus {
+  border-color: #ff9000;
+  box-shadow: 0 0 12px rgba(255, 144, 0, 0.35);
+}
+
+.hero {
+  padding: 60px 24px 30px;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 64px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #ffb347, #ff9000, #ff6a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 4px;
+}
+
+.hero-text img {
+  height: 80px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.hero-sub {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #aaa;
+}
+
+.section-title {
+  padding: 20px 24px 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ff9000;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 24px;
+}
+
+.card {
+  background: rgba(26, 26, 26, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 144, 0, 0.2);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #ff9000;
+  box-shadow: 0 12px 30px rgba(255, 144, 0, 0.25);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff9000;
+  margin-bottom: 8px;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #ccc;
+  height: 44px;
+  overflow: hidden;
   margin-bottom: 12px;
 }
 
-h1 { font-size: 2.2em; }
-h2 { font-size: 1.6em; }
-h3 { font-size: 1.2em; color: #ff9900; }
-
-ol, ul {
-  margin-left: 24px;
+.card a {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #ff9000;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 20px;
+  transition: background 0.2s, transform 0.2s;
 }
 
-li {
-  margin-bottom: 8px;
-  font-size: 1.04em;
+.card a:hover {
+  background: #ffb347;
+  transform: scale(1.05);
 }
 
-/* ====== ССЫЛКИ В ТЕКСТЕ ====== */
-a {
-  color: #ffe646;
-  text-decoration: underline;
+footer {
+  margin-top: 40px;
+  padding: 30px 24px;
+  background: rgba(13, 13, 13, 0.7);
+  border-top: 1px solid rgba(255, 144, 0, 0.25);
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.footer-links a {
+  color: #ff9000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
   transition: color 0.2s;
 }
 
-a:hover {
-  color: #ff9900;
-  text-shadow: 0 0 8px #ffe64688, 0 0 12px #fff4;
+.footer-links a:hover {
+  color: #ffb347;
 }
 
-/* ====== КОД ====== */
-code.language-plaintext.highlighter-rouge {
-  background: #222;
-  color: #ffe646;
-  border-radius: 6px;
-  padding: 2px 8px;
-  font-family: 'Fira Mono', 'Consolas', 'monospace';
-  font-size: 1em;
-  box-shadow: 0 0 10px #ffe64655, 0 0 24px #fff2;
-  text-shadow: 0 0 8px #ffe646aa, 0 0 16px #fff8;
+.footer-copy {
+  color: #666;
+  font-size: 13px;
 }
-
-/* ====== БЛОК-КВОТЫ ====== */
-blockquote {
-  background: #22133f;
-  border-left: 4px solid #ffe646;
-  margin: 14px 0;
-  padding: 10px 18px;
-  color: #ffe646;
-  font-style: italic;
-  box-shadow: 0 0 12px #ffe64622;
-}
-
-/* ====== HR ====== */
-hr {
-  border: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #ffe646 0%, #333 100%);
-  margin: 28px 0;
-  box-shadow: 0 0 12px #ffe64633, 0 0 24px #fff3;
-}
-
-/* ====== СВЕТЯЩИЙСЯ ТЕКСТ ====== */
-.glow {
-  color: #ffe646;
-  text-shadow: 0 0 24px #ffe646, 0 0 48px #ffe646aa, 0 0 96px #fffc;
-  font-weight: bold;
-}
-
-/* ====== МЕЛКИЕ ДЕТАЛИ ====== */
-em {
-  color: #ff9900;
-  font-style: normal;
-  font-weight: bold;
-  text-shadow: 0 0 8px #ff9900cc, 0 0 18px #fff6;
-}
-
-strong {
-  color: #ffe646;
-  font-weight: bold;
-  text-shadow: 0 0 6px #ffe64677, 0 0 12px #fff3;
-}
-
-/* ====== ЗЕЛЁНЫЙ ТЕКСТ (Палитра под фон) ====== */
-.green,
-.green-text,
-.green-glow {
-  color: #49ff49; /* Ярко-зелёный, хорошо сочетается с темно-фиолетовым */
-  text-shadow: 0 0 12px #49ff4999, 0 0 32px #49ff4922;
-  font-weight: bold;
-}
-.green-glow {
-  text-shadow: 0 0 24px #49ff49, 0 0 48px #49ff49aa, 0 0 96px #49ff49cc;
-}
-
-/* Пример применения:
-<span class="green">Зелёный текст</span>
-<span class="green-glow">Светящийся зелёный текст</span>
-*/
