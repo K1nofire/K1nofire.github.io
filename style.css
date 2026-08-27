@@ -1,4 +1,8 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html, body {
   user-select: none;
@@ -93,13 +97,12 @@ header {
   border: none;
   border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.25s, box-shadow 0.25s;
   cursor: pointer;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 26px rgba(255, 144, 0, 0.35);
+  transform: none;
+  box-shadow: none;
 }
 
 .card img {
@@ -154,6 +157,7 @@ footer {
   font-size: 12px;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif;
 }
+
 .modal-overlay {
   position: fixed;
   top: 0;
