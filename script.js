@@ -1,3 +1,20 @@
+const cacheBuster = Date.now();
+
+function loadJSON(url) {
+  return fetch(`${url}?v=${cacheBuster}`, { cache: 'no-store' })
+    .then(r => {
+      if (!r.ok) throw new Error('Не удалось загрузить JSON');
+      return r.json();
+    });
+}
+
+const loadedImages = new Set();
+
+function freshImage(src) {
+  if (!src) return src;
+  return `${src}${src.includes('?') ? '&' : '?'}v=${cacheBuster}`;
+}
+
 const overlay = document.getElementById('modalOverlay');
 const acceptBtn = document.getElementById('acceptBtn');
 const declineBtn = document.getElementById('declineBtn');
